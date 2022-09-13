@@ -1,0 +1,17 @@
+.note-container {
+  position: relative;
+  // top: 40px;
+  // left: 90px;
+  width: 150px;
+  height: 150px;
+  background-color: #faff93;
+  -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.45); 
+  box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.45);
+
+  img {
+    position: absolute;
+    width: 40px;
+    top: -25px;
+    left: 60px;
+  }
+}
