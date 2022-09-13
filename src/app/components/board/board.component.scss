@@ -1,7 +1,8 @@
 .board-container {
+  position: relative;
   padding: 20px;
   width: 90%;
-  height: 96vh;
+  height: 90vh;
   margin: auto;
   border: 12px solid rgb(138, 125, 184);
   background-image: url('../../../assets/images/cork-bg.jpg');
@@ -12,4 +13,27 @@
 
 app-note + app-note {
   margin-left: 8px;
+}
+
+button {
+  border: 1px solid #c12dbc;
+  background-color: #c12dbc;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 30px;
+
+  -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.45); 
+  box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.45);
+  transition-duration: .2s;
+  cursor: pointer;
+
+  &:hover {    
+    transition-duration: .2s;
+    width: 130px;
+  }  
 }
