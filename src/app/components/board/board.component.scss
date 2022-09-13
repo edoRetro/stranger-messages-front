@@ -7,4 +7,9 @@
   background-image: url('../../../assets/images/cork-bg.jpg');
   background-repeat: repeat;
   background-size: 130px;
+  display: flex;
+}
+
+app-note + app-note {
+  margin-left: 8px;
 }
