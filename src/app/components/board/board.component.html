@@ -1,4 +1,4 @@
 <div class="board-container">
   <app-note *ngFor="let message of messages" [noteText]="message.message" [noteAuthor]="message.authorID"></app-note>
-  <button type="button">+</button>
+  <button type="button" (click)="openCreationModal()">+</button>
 </div>

@@ -1,0 +1,20 @@
+<div class="new-note-container">
+  <p class="title">Crea tu nota</p>
+
+  <form [formGroup]="creationForm" (ngSubmit)="submitForm()">
+
+    <div class="control-container">
+      <label for="message-control">Mensaje</label>
+      <input id="message-control" type="text" formControlName="message">
+    </div>
+
+    <div class="control-container">
+      <label for="author-control">Autor</label>
+      <input id="author-control" type="text" formControlName="authorName">
+    </div>    
+
+    <button type="submit">Crear</button>
+
+  </form>  
+
+</div>

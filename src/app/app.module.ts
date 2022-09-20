@@ -8,18 +8,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoardComponent } from './components/board/board.component';
 import { NoteComponent } from './components/note/note.component';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NewNoteComponent } from './components/new-note/new-note.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoardComponent,
-    NoteComponent
+    NoteComponent,
+    NewNoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,    
+    NgbModalModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
