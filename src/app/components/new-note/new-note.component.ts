@@ -25,7 +25,7 @@ export class NewNoteComponent implements OnInit {
     let formValue = this.creationForm.value as MessageDTO;
     formValue.createdDate = new Date();
     this.msgService.newMessage(formValue).subscribe(saveResponse => {
-      console.log("Saved!");      
+      console.log("Saved data!");      
     });
   }
 
