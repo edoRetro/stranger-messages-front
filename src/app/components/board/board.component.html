@@ -1,4 +1,7 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.8)" size="medium" color="#fff" type="square-spin" [fullScreen]="true">
+  <p style="color: white"> Cargando datos... </p>
+</ngx-spinner>
 <div class="board-container">
-  <app-note *ngFor="let message of messages" [noteText]="message.message" [noteAuthor]="message.authorID"></app-note>
+  <app-note *ngFor="let message of messages" [noteText]="message.message" [noteAuthor]="message.authorName"></app-note>
   <button type="button" (click)="openCreationModal()">+</button>
 </div>

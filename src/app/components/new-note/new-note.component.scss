@@ -1,0 +1,58 @@
+.close-icon {
+  position: absolute;
+  top: -16px;
+  right: -14px;
+  border: 1px solid #c12dbc;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #c12dbc;
+  color: white;
+  font-family: "Gochi Hand", cursive;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.new-note-container {
+  padding: 20px 30px;
+  font-family: 'Gochi Hand', cursive;  
+
+  .title {
+    font-size: 28px;
+  }
+
+  .control-container {
+    label, input {
+      display: block;
+    }    
+  }
+
+  .control-container + .control-container {
+    margin-top: 30px;
+  }
+
+  .button-container {
+    text-align: right;
+
+    button {
+      border: 1px solid #c12dbc;
+      background-color: #c12dbc;
+      color: white;
+      width: 90px;    
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 5px 5px 4px 0px rgb(0 0 0 / 45%);
+      transition-duration: 0.2s;
+      cursor: pointer;   
+      margin-top: 12px;
+
+      &:disabled {
+        cursor: not-allowed;
+        border: 1px solid #858585;
+        background-color: #858585;
+      }
+    }
+  }  
+
+}

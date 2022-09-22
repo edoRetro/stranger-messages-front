@@ -1,6 +1,9 @@
 <div class="note-container" [ngStyle]="{ 'transform': rotationStyle }" [ngClass]="'bg' + colorBG" [@appearAnimation]>
   <img src="assets/images/pin.png" alt="image">
 
-  <p>{{ noteText }}</p>
-  <p>{{ noteAuthor }}</p>
+  <div class="note-text-container">
+    <p class="message">{{ noteText }}</p>
+    <p class="author">{{ noteAuthor }}</p>
+  </div>
+  
 </div>

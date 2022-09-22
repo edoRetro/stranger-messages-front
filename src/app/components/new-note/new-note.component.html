@@ -1,19 +1,25 @@
+<span class="close-icon" (click)="closeModal()">X</span>
+
 <div class="new-note-container">
-  <p class="title">Crea tu nota</p>
+  <p class="title">Crea tu nota 😀📝</p>
 
   <form [formGroup]="creationForm" (ngSubmit)="submitForm()">
 
     <div class="control-container">
       <label for="message-control">Mensaje</label>
-      <input id="message-control" type="text" formControlName="message">
+      <input id="message-control" maxlength="50" class="lower-line" autocomplete="off" type="text" formControlName="message">
+      <span>{{ messageLength }}/50</span>
     </div>
 
     <div class="control-container">
       <label for="author-control">Autor</label>
-      <input id="author-control" type="text" formControlName="authorName">
+      <input id="author-control" maxlength="20" class="lower-line" autocomplete="off" type="text" formControlName="authorName">
+      <span>{{ authorLength }}/20</span>
     </div>    
 
-    <button type="submit">Crear</button>
+    <div class="button-container">
+      <button type="submit" [disabled]="!creationForm.valid">CREAR</button>
+    </div>    
 
   </form>  
 

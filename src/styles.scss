@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
 
 .bg0 {
   background-color: #faff93;
@@ -19,5 +21,13 @@
 .bg4 {
   background-color: #b2abff;
 }
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+
+input {
+  outline: none;
+
+  &.lower-line {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+  }  
+}

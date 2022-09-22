@@ -20,8 +20,25 @@
     left: 60px;
   }
 
-  p {
-    margin: 0;
-    font-family: 'Gochi Hand', cursive;
+  .note-text-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    p {
+      margin: 0;
+      font-family: 'Gochi Hand', cursive;
+
+      &.message {
+        flex-grow: 2;
+      }
+
+      &.author {
+        font-size: 12px;
+        text-align: right;
+      }
+    }
   }
+
+  
 }

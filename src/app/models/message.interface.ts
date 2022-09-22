@@ -1,5 +1,5 @@
 export interface Message {
-  authorID: number;
+  authorName: number;
   message: string;
   _id: string;
 }

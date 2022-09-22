@@ -8,7 +8,12 @@
   background-image: url('../../../assets/images/cork-bg.jpg');
   background-repeat: repeat;
   background-size: 130px;
+
+  //Flex properties
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 app-note + app-note {
@@ -34,6 +39,6 @@ button {
 
   &:hover {    
     transition-duration: .2s;
-    width: 130px;
+    transform: scale(1.3);    
   }  
 }
